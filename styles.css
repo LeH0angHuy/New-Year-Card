@@ -34,38 +34,23 @@ body {
 }
 
 @keyframes rainbowBorder {
-    0% {
+    0%, 100% {
         border: 2px solid red;
     }
-    10% {
-        border: 2px solid red; /* Increase frequency by shortening the duration */
-    }
-    20% {
-        border: 2px solid red;
-    }
-    30% {
+    16.666% {
         border: 2px solid orange;
     }
-    40% {
+    33.333% {
         border: 2px solid yellow;
     }
     50% {
         border: 2px solid green;
     }
-    60% {
+    66.666% {
         border: 2px solid blue;
     }
-    70% {
+    83.333% {
         border: 2px solid indigo;
-    }
-    80% {
-        border: 2px solid violet;
-    }
-    90% {
-        border: 2px solid red; /* Repeat for a smoother loop */
-    }
-    100% {
-        border: 2px solid violet;
     }
 }
 
