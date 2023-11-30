@@ -22,15 +22,15 @@ body {
 }
 
 .card {
-    max-width: 800px;
-    width: 90%;
-    padding: 40px; /* Increased padding for better quality */
+    max-width: 800px; /* Increase the maximum width */
+    width: 90%; /* Increase the width to 90% of its containing element */
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); /* Increased box shadow for a more pronounced effect */
-    border-radius: 15px; /* Increased border radius for a smoother look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     margin: auto;
     position: relative;
-    animation: rainbowBorder 5s linear infinite;
+    animation: rainbowBorder 5s linear infinite; /* Add the rainbow border animation */
 }
 
 @keyframes rainbowBorder {
@@ -59,19 +59,17 @@ body {
 
 h1 {
     color: #e74c3c;
-    font-size: 2em; /* Increased font size for a more prominent heading */
 }
 
 p {
     font-size: 18px;
     line-height: 1.6;
-    margin-top: 20px; /* Added margin for better spacing */
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px; /* Adjusted border radius for consistency */
+    border-radius: 5px;
     margin-top: 20px;
 }
 
