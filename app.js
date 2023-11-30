@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             },
             color: {
-                value: "#ffffff"
+                value: "red" // Change the circle color to red
             },
             shape: {
-                type: ["image", "circle"], // Add another shape for explosion particles
+                type: ["image", "circle"],
                 image: {
                     src: "star.png",
                     width: 250,
@@ -83,86 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         retina_detect: true
     };
-  
-    // Add explosion particles configuration
-    var explosionParticlesConfig = {
-        particles: {
-            number: {
-                value: 80,
-                density: {
-                    enable: true,
-                    value_area: 800
-                }
-            },
-            color: {
-                value: "#ff0000" // Red color for explosion particles
-            },
-            shape: {
-                type: "circle"
-            },
-            opacity: {
-                value: 1,
-                random: true,
-                anim: {
-                    enable: true,
-                    speed: 1,
-                    opacity_min: 0,
-                    sync: false
-                }
-            },
-            size: {
-                value: 5,
-                random: true,
-                anim: {
-                    enable: true,
-                    speed: 3,
-                    size_min: 0.1,
-                    sync: false
-                }
-            },
-            line_linked: {
-                enable: false
-            },
-            move: {
-                enable: true,
-                speed: 5,
-                direction: "random",
-                random: true,
-                straight: false,
-                out_mode: "out",
-                bounce: false,
-                attract: {
-                    enable: false
-                }
-            }
-        },
-        interactivity: {
-            detect_on: "canvas",
-            events: {
-                onhover: {
-                    enable: false
-                },
-                onclick: {
-                    enable: false
-                },
-                resize: true
-            },
-            modes: {
-                grab: {
-                    distance: 800,
-                    line_linked: {
-                        opacity: 1
-                    }
-                },
-                repulse: {
-                    distance: 400,
-                    duration: 0.4
-                }
-            }
-        },
-        retina_detect: true
-    };
-  
+
     particlesJS("particles-js", particlesConfig);
-    particlesJS("explosion-js", explosionParticlesConfig); // Create a separate container for explosion particles
-  });
+});
