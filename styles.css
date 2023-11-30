@@ -34,7 +34,7 @@ body {
 }
 
 @keyframes rainbowBorder {
-    0%, 100% {
+    0% {
         border: 2px solid red;
     }
     16.666% {
@@ -51,6 +51,9 @@ body {
     }
     83.333% {
         border: 2px solid indigo;
+    }
+    100% {
+        border: 2px solid violet;
     }
 }
 
