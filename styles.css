@@ -30,6 +30,8 @@ body {
     border-radius: 10px;
     margin: auto;
     position: relative;
+    top: 50%; /* Position from the center */
+    transform: translateY(-50%); /* Center the card vertically */
     animation: rainbowBorder 5s linear infinite; /* Add the rainbow border animation */
 }
 
@@ -37,20 +39,32 @@ body {
     0% {
         border: 2px solid red;
     }
-    16.666% {
+    10% {
+        border: 2px solid red; /* Increase frequency by shortening the duration */
+    }
+    20% {
+        border: 2px solid red;
+    }
+    30% {
         border: 2px solid orange;
     }
-    33.333% {
+    40% {
         border: 2px solid yellow;
     }
     50% {
         border: 2px solid green;
     }
-    66.666% {
+    60% {
         border: 2px solid blue;
     }
-    83.333% {
+    70% {
         border: 2px solid indigo;
+    }
+    80% {
+        border: 2px solid violet;
+    }
+    90% {
+        border: 2px solid red; /* Repeat for a smoother loop */
     }
     100% {
         border: 2px solid violet;
